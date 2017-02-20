@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="../css/standard.css">
+  </head>
+  <body>
+    <h2>{{ title }}</h2>
+    <h1>{{ header }}</h1>
+    <h1>Implement a nicer login form. Separate CSS. Simple black/white square design bottom up.</h1>
+    <p>
+      <form id="loginForm" action="/login/" method="POST">
+        <div style="margin: 1em;">
+          <label for="username" style="display: inline-block; float: left; clear: left; width: 150px; text-align: right; margin-right: 2em;">Username:</label>
+          <input style="display:inline-block; float:left;" id="username" /><br />
+          <label for="password" style="display: inline-block; float: left; clear: left; width: 150px; text-align: right; margin-right: 2em;">Password:</label>
+          <input style="display:inline-block; float:left;" id="password" type="password" name="password" />
+        </div><br /><p>
+        <button style="font-size: 1.5em; margin-left: 10em; width: 6em; height: 2.2em; margin-top: 0px; border: 2px solid black; background-color: #3b80a8; border-radius:5px;" id="loginButton">Login</button>
+      </form>
+    </p>
+    <script type="text/javascript">document.getElementById("username").focus();</script>
+  </body>
+</html>
